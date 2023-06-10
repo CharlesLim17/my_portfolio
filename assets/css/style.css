@@ -7,6 +7,7 @@
 body {
 	font-family: 'Montserrat', sans-serif;
 	color: #fff;
+	/* background-image: linear-gradient(#202020, #20202060); */
 	background-color: #333;
 }
 
@@ -17,7 +18,7 @@ body {
 }
 
 header {
-	background-color: #222;
+	background-color: #202020;
 	padding: 20px 0;
 }
 
@@ -25,6 +26,7 @@ header nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	
 }
 
 header nav a {
@@ -32,10 +34,12 @@ header nav a {
 	text-decoration: none;
 	font-size: 18px;
 	transition: all 0.3s;
+	padding: 14px 28px;
 }
 
 header nav a:hover {
-	color: #eee;
+	background-color: #9F71FF;
+	border-radius: 20px;
 }
 
 
@@ -47,7 +51,6 @@ header nav a:hover {
 	justify-content: center;
 	flex-direction: column;
 	text-align: center;
-	background-image: url('hero-bg.jpg');
 	background-size: cover;
 	background-position: center;
 }
@@ -64,21 +67,23 @@ header nav a:hover {
 
 .hero .btn {
 	display: inline-block;
-	padding: 15px 30px;
+	padding: 16px 32px;
 	color: #fff;
-	background-color: #333;
 	border: none;
 	font-size: 18px;
 	cursor: pointer;
 	transition: all 0.3s;
+	border-radius: 14px;
+	background-color: #333;
 }
 
 .hero .btn:hover {
-	background-color: #444;
+	background-color: #9F71FF;
 }
 
 .about {
 	padding: 100px 0;
+	/* background-color: #202020; */
 }
 
 .about h2 {
