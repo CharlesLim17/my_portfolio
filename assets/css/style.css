@@ -52,16 +52,19 @@ header nav a:hover {
 	background-size: cover;
 	background-position: center;
 	background-color: #303030;
+	overflow: hidden;
 }
 
 .hero h1 {
 	font-size: 48px;
 	margin-bottom: 32px;
+	animation: slideFromLeft 1s ease-in-out forwards;
 }
 
 .hero p {
 	font-size: 26px;
 	margin-bottom: 60px;
+	animation: slideFromLeft 1.2s ease-in-out forwards;
 }
 
 .hero .btn {
@@ -73,17 +76,19 @@ header nav a:hover {
 	border-radius: 20px;
 	font-size: 18px;
 	cursor: pointer;
-	transition: all 0.3s;
+	transition: all 0.25s;
 	text-decoration: none;
 	background-image: linear-gradient(to left, #9F71FF 0%, #9F71FF 0%);
 	background-position: 0 0;
 	background-repeat: no-repeat;
 	background-size: 0% 100%;
+	animation: slideFromLeft 1.5s ease-in-out forwards;
 }
   
 .hero .btn:hover {
 	background-size: 100% 100%;
 }
+
 
 .about {
     background-color: #383838;
@@ -102,6 +107,7 @@ header nav a:hover {
 .about-image {
     flex: 0 0 40%;
     text-align: center;
+	animation: slideInRight 1s ease forwards;
 }
 
 .about-image img {
@@ -119,42 +125,19 @@ header nav a:hover {
 .about h2 {
     font-size: 48px;
     margin-bottom: 10px;
+	animation: slideInRight 1s ease forwards;
 }
 
 .about h4 {
     font-size: 26px;
     margin-bottom: 30px;
+	animation: slideInRight 1s ease forwards;
 }
 
 .about p {
     font-size: 22px;
     line-height: 2.0;
-}
-
-@media (max-width: 1080px) {
-    .about-content {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .about-image,
-    .about-text {
-        flex: 100%;
-    }
-
-	.about-image img {
-        margin-bottom: 30px;
-        max-width: 400px;
-    }
-
-    .about-image img {
-        margin-bottom: 30px;
-    }
-
-    .about-text {
-        margin-top: 0;
-        padding-left: 0;
-    }
+	animation: slideInRight 1s ease forwards;
 }
 
 
@@ -183,7 +166,6 @@ header nav a:hover {
     padding-bottom: 10px;
 }
 
-  
 .project-description {
     display: flex;
     align-items: center;
@@ -203,6 +185,7 @@ header nav a:hover {
     margin-right: 50px;
     text-align: justify;
 }
+
 
 .contact {
 	padding: 100px 0;
@@ -279,3 +262,52 @@ footer p {
 	font-size: 14px;
 	color: #999;
 }
+
+
+@media (max-width: 1080px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image,
+    .about-text {
+        flex: 100%;
+    }
+
+	.about-image img {
+        margin-bottom: 30px;
+        max-width: 400px;
+    }
+
+    .about-image img {
+        margin-bottom: 30px;
+    }
+
+    .about-text {
+        margin-top: 0;
+        padding-left: 0;
+    }
+}
+
+@keyframes slideFromLeft {
+	0% {
+	  transform: translateX(-100%); /* Start position outside the screen */
+	  opacity: 0; /* Initially hidden */
+	}
+	100% {
+	  transform: translateX(0); /* End position at original location */
+	  opacity: 1; /* Fully visible */
+	}
+}
+
+@keyframes slideInRight {
+	from {
+	  transform: translateX(100%);
+	  opacity: 0;
+	}
+	to {
+	  transform: translateX(0);
+	  opacity: 1;
+	}
+  }
