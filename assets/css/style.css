@@ -85,23 +85,81 @@ header nav a:hover {
 	background-size: 100% 100%;
 }
   
-
+/* ---------- ABOUT SECTION STYLES ---------- */
 .about {
-	padding: 100px 0;
-	background-color: #383838;
+    background-color: #383838;
+    padding: 50px 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.about-image {
+    flex: 0 0 40%;
+    text-align: center;
+}
+
+.about-image img {
+    border-radius: 50%;
+    max-width: 100%;
+    height: auto;
+}
+
+.about-text {
+    flex: 0 0 60%;
+    margin-top: 20px;
+    padding-left: 60px;
 }
 
 .about h2 {
-	text-align: center;
-	font-size: 36px;
-	margin-bottom: 50px;
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.about h4 {
+    font-size: 26px;
+    margin-bottom: 30px;
 }
 
 .about p {
-	font-size: 18px;
-	line-height: 1.5;
-	margin-bottom: 50px;
+    font-size: 22px;
+    line-height: 2.0;
 }
+
+/* Responsive Styling */
+@media (max-width: 1080px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image,
+    .about-text {
+        flex: 100%;
+    }
+
+	.about-image img {
+        margin-bottom: 30px;
+        max-width: 400px;
+    }
+
+    .about-image img {
+        margin-bottom: 30px;
+    }
+
+    .about-text {
+        margin-top: 0;
+        padding-left: 0;
+    }
+}
+
+
 
 .projects {
 	padding: 100px 0;

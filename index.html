@@ -7,51 +7,69 @@
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
 </head>
-<body>
-	<header>
-		<div class="container">
-			<nav>
-				<a href="#">Home</a>
-				<a href="#about">About</a>
-				<a href="#projects">Projects</a>
-				<a href="#contact">Contact</a>
-			</nav>
-		</div>
-	</header>
-	<main>
-		<section id="home" class="hero">
-			<div class="container">
-				<h1>Welcome to My Portfolio!</h1>
-				<p>Hi, I'm Charles! I am a Software Engineer and this is my porfolio website.</p>
-				<a href="#about" class="btn">Learn More</a>
-			</div>
-		</section>
-		<section id="about" class="about">
-			<div class="container">
-				<h2>About Me</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque euismod, massa quis efficitur consectetur, urna justo efficitur nulla, quis ornare nibh orci at ipsum. In hac habitasse platea dictumst. Morbi blandit sem nec purus ornare, quis vehicula purus consectetur. Quisque blandit mauris lacus, id rutrum metus fringilla eu. Morbi auctor, est sit amet aliquam lacinia, erat lacus porta nibh, id auctor quam purus vel urna. Proin euismod velit sed mauris fermentum, at iaculis ipsum iaculis. Nullam non nisi eu purus eleifend facilisis. Aliquam erat volutpat. Aenean non nisi sed elit pharetra tincidunt et ac nunc. Aliquam luctus felis et dui luctus, sed placerat nunc ullamcorper. Aliquam non mauris
-                </p>
+
+    <body>
+        <header>
+            <div class="container">
+                <nav>
+                    <a href="#">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </nav>
             </div>
+        </header>
+        <main>
+
+            <!-- Section 1 (Introduction) -->
+            <section id="home" class="hero">
+                <div class="container">
+                    <h1>Welcome to My Portfolio!</h1>
+                    <p>Hi, I'm Charles! I am a Software Engineer and this is my porfolio website.</p>
+                    <a href="#about" class="btn">Learn More</a>
+                </div>
+            </section>
+
+            <!-- Section 2 (ABOUT) -->
+            <section id="about" class="about">
+                <div class="container">
+                    <div class="about-content">
+                        <div class="about-image">
+                            <img src="assets/images/my-picture.jpg" alt="My Picture">
+                        </div>
+                        <div class="about-text">
+                            <h2>Charles Angelo Lim</h2>
+                            <h4>Software Engineer</h4>
+                            <p>Hello! I'm a passionate software engineer with a background in mobile development with Flutter, Kotlin, Java, and Firebase, as well as web development using Django and React. With a strong focus on user-friendly experience and elegant code, I love transforming ideas into remarkable digital solutions. Let's collaborate and create something extraordinary together.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- Section 3 (Projects) -->
             <section id="projects" class="projects">
                 <div class="container">
                     <h2>My Projects</h2>
                     <div class="project">
                         <h3>Project 1</h3>
                         <div class="project-description">
-                          <img src="assets/images/project1.jpg" alt="Project 1">
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel iaculis mauris. Mauris euismod pretium eros, sit amet suscipit nisl accumsan a. Aliquam sed mauris dictum, egestas odio non, tincidunt velit. Praesent vel ipsum vel quam malesuada pretium. Aliquam tincidunt leo a magna tincidunt, in porta sem tincidunt. Ut non placerat metus. Curabitur id neque at neque sollicitudin varius. Curabitur blandit dolor quam, auctor volutpat urna iaculis eu. Sed faucibus, diam sed laoreet sollicitudin, ipsum turpis egestas metus, eget fringilla dui velit vel dui. Curabitur vel scelerisque ligula. Nulla sit amet semper felis, a pharetra orci. Duis at odio sed arcu volutpat porttitor. Donec porta suscipit purus, a tincidunt leo fringilla nec. Curabitur id ultricies ipsum, ac egestas mauris. Aliquam erat volutpat. Curabitur a ligula velit.</p>
+                        <img src="assets/images/project1.jpg" alt="Project 1">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel iaculis mauris. Mauris euismod pretium eros, sit amet suscipit nisl accumsan a. Aliquam sed mauris dictum, egestas odio non, tincidunt velit. Praesent vel ipsum vel quam malesuada pretium. Aliquam tincidunt leo a magna tincidunt, in porta sem tincidunt. Ut non placerat metus. Curabitur id neque at neque sollicitudin varius. Curabitur blandit dolor quam, auctor volutpat urna iaculis eu. Sed faucibus, diam sed laoreet sollicitudin, ipsum turpis egestas metus, eget fringilla dui velit vel dui. Curabitur vel scelerisque ligula. Nulla sit amet semper felis, a pharetra orci. Duis at odio sed arcu volutpat porttitor. Donec porta suscipit purus, a tincidunt leo fringilla nec. Curabitur id ultricies ipsum, ac egestas mauris. Aliquam erat volutpat. Curabitur a ligula velit.</p>
                         </div>
                     </div>
-                      
+                    
                     <div class="project">
                         <h3>Project 2</h3>
                         <div class="project-description">
-                          <img src="assets/images/project2.jpg" alt="Project 1">
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel iaculis mauris. Mauris euismod pretium eros, sit amet suscipit nisl accumsan a. Aliquam sed mauris dictum, egestas odio non, tincidunt velit. Praesent vel ipsum vel quam malesuada pretium. Aliquam tincidunt leo a magna tincidunt, in porta sem tincidunt. Ut non placerat metus. Curabitur id neque at neque sollicitudin varius. Curabitur blandit dolor quam, auctor volutpat urna iaculis eu. Sed faucibus, diam sed laoreet sollicitudin, ipsum turpis egestas metus, eget fringilla dui velit vel dui. Curabitur vel scelerisque ligula. Nulla sit amet semper felis, a pharetra orci. Duis at odio sed arcu volutpat porttitor. Donec porta suscipit purus, a tincidunt leo fringilla nec. Curabitur id ultricies ipsum, ac egestas mauris. Aliquam erat volutpat. Curabitur a ligula velit.</p>
+                        <img src="assets/images/project2.jpg" alt="Project 1">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel iaculis mauris. Mauris euismod pretium eros, sit amet suscipit nisl accumsan a. Aliquam sed mauris dictum, egestas odio non, tincidunt velit. Praesent vel ipsum vel quam malesuada pretium. Aliquam tincidunt leo a magna tincidunt, in porta sem tincidunt. Ut non placerat metus. Curabitur id neque at neque sollicitudin varius. Curabitur blandit dolor quam, auctor volutpat urna iaculis eu. Sed faucibus, diam sed laoreet sollicitudin, ipsum turpis egestas metus, eget fringilla dui velit vel dui. Curabitur vel scelerisque ligula. Nulla sit amet semper felis, a pharetra orci. Duis at odio sed arcu volutpat porttitor. Donec porta suscipit purus, a tincidunt leo fringilla nec. Curabitur id ultricies ipsum, ac egestas mauris. Aliquam erat volutpat. Curabitur a ligula velit.</p>
                         </div>
                     </div>
                 </div>
             </section>
+            
+            <!-- Section 4 (Contacts) -->
             <section id="contact" class="contact">
                 <div class="container">
                     <h2>Get In Touch</h2>
@@ -69,12 +87,16 @@
                     </div>
                 </div>
             </section>
+
         </main>
+
+        <!-- Footer Section -->
         <footer>
             <div class="container">
                 <p><i class="fas fa-copyright"></i> Copyright Charles Angelo Lim 2022</p>
             </div>
         </footer>
+    
     </body>
 </html>
     
