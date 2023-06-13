@@ -107,13 +107,13 @@ header nav a:hover {
 .about-image {
     flex: 0 0 40%;
     text-align: center;
-	animation: slideInRight 1s ease forwards;
 }
 
 .about-image img {
     border-radius: 50%;
     max-width: 100%;
     height: auto;
+	padding: 20px;
 }
 
 .about-text {
@@ -123,21 +123,19 @@ header nav a:hover {
 }
 
 .about h2 {
-    font-size: 48px;
+    font-size: 44px;
     margin-bottom: 10px;
-	animation: slideInRight 1s ease forwards;
 }
 
 .about h4 {
-    font-size: 26px;
+    font-size: 24px;
     margin-bottom: 30px;
-	animation: slideInRight 1s ease forwards;
+
 }
 
 .about p {
-    font-size: 22px;
+    font-size: 18px;
     line-height: 2.0;
-	animation: slideInRight 1s ease forwards;
 }
 
 
@@ -264,10 +262,41 @@ footer p {
 }
 
 
+@media (max-width: 720px){
+	header nav {
+		flex-direction: column;
+		align-items: flex-start;
+		width: 100%;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	  }
+	  
+	header nav a {
+		padding: 10px 20px;
+		width: 100%;
+		padding: 16px;
+		margin-bottom: 10px;
+	}
+}
+
 @media (max-width: 1080px) {
+	.hero h1 {
+		font-size: 44px;
+	}
+	  
+	.hero p {
+		font-size: 18px;
+		margin-bottom: 40px;
+	}
+	  
+	.hero .btn {
+		padding: 10px 40px;
+		font-size: 16px;
+	}
+
     .about-content {
         flex-direction: column;
-        text-align: center;
+    	text-align: center;
     }
 
     .about-image,
@@ -300,14 +329,3 @@ footer p {
 	  opacity: 1; /* Fully visible */
 	}
 }
-
-@keyframes slideInRight {
-	from {
-	  transform: translateX(100%);
-	  opacity: 0;
-	}
-	to {
-	  transform: translateX(0);
-	  opacity: 1;
-	}
-  }

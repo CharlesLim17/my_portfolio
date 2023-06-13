@@ -4,14 +4,10 @@ menuLinks.forEach(link => {
   link.addEventListener('click', e => {
     e.preventDefault();
     const href = link.getAttribute('href');
-    document.querySelector(href).scrollIntoView({
+    const targetElement = document.querySelector(href);
+    window.scrollTo({
+      top: targetElement.offsetTop,
       behavior: 'smooth'
     });
   });
-});
-
-// Toggle "open" class on hamburger menu icon when clicked
-const hamburger = document.querySelector('.hamburger');
-hamburger.addEventListener('click', () => {
-  hamburger.classList.toggle('open');
 });
