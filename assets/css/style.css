@@ -41,6 +41,10 @@ header nav a:hover {
 	border-radius: 20px;
 }
 
+header nav .icon {
+	display: none;
+}
+
 
 .hero {
 	height: calc(100vh - 60px);
@@ -276,6 +280,13 @@ footer p {
 		width: 100%;
 		padding: 16px;
 		margin-bottom: 10px;
+	}
+
+	header nav a.icon {
+		float: right;
+    	display: block;
+		position: absolute;
+    	
 	}
 }
 
