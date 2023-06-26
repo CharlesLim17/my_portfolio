@@ -6,22 +6,35 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+
+    <!--Bootstrap-->
+    
 </head>
 
     <body>
-        <header>
+        <!-- <header>
             <div class="container">
-                <nav>
-                    <a href="#">Home</a>
-                    <a href="#about">About</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#contact">Contact</a>
+                <nav class="myTopnav" id="myTopnav">
                     <a href="javascript:void(0);" class="icon" onclick="toggleNavFunction()">
                         <i class="fa fa-bars"></i>
                     </a>
+                    <a href="#" class="active">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
                 </nav>
             </div>
-        </header>  
+        </header>   -->
+        
+        <div class="topnav" id="myTopnav">
+            <a class="active" href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#project-1">Projects</a>
+            <a href="#contact">Contact</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
         
         <main>
 
@@ -52,26 +65,51 @@
               
 
 
-            <!-- Section 3 (Projects) -->
-            <section id="projects" class="projects">
+            <!-- Section 3 (Project 1) -->
+            <section id="project-1" class="project-1">
                 <div class="container">
-                    <h2>My Projects</h2>
-                    <div class="project">
-                        <h3>KainSaan</h3>
-                        <a href="#" class='btn-yt'><i class="fab fa-youtube"></i>Watch</a>
-                        <a href="#" class='btn-git'><i class="fab fa-github"></i>View</a>
-                        <div class="project-description">
-                        <img src="assets/images/project1.jpg" alt="Project 1">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel iaculis mauris. Mauris euismod pretium eros, sit amet suscipit nisl accumsan a. Aliquam sed mauris dictum, egestas odio non, tincidunt velit. Praesent vel ipsum vel quam malesuada pretium. Aliquam tincidunt leo a magna tincidunt, in porta sem tincidunt. Ut non placerat metus. Curabitur id neque at neque sollicitudin varius. Curabitur blandit dolor quam, auctor volutpat urna iaculis eu. Sed faucibus, diam sed laoreet sollicitudin, ipsum turpis egestas metus, eget fringilla dui velit vel dui. Curabitur vel scelerisque ligula. Nulla sit amet semper felis, a pharetra orci. Duis at odio sed arcu volutpat porttitor. Donec porta suscipit purus, a tincidunt leo fringilla nec. Curabitur id ultricies ipsum, ac egestas mauris. Aliquam erat volutpat. Curabitur a ligula velit.</p>
+                    <!-- <h2>My Personal Projects</h2> -->
+                    <div class="project-one">
+                        <div class="project-one-heading">
+                            <h3>KainSaan</h3>
+                            <h5>2022</h5>
+                        </div>
+                        <div class="project-one-buttons">
+                            <a href="https://github.com/CharlesLim17/KainSaan-Final" class="btn-git"><i class="fab fa-github"></i> View</a>
+                            <a href="https://www.youtube.com/watch?v=TKA2Rwd-xRI" class="btn-yt"><i class="fab fa-youtube"></i> Watch</a> 
+                        </div>
+                        <div class="project-one-details">
+                            <div class="project-one-content">
+                                <div class="project-one-image">
+                                    <img src="assets/images/project1.jpg" alt="Project 1">
+                                </div>
+                                <div class="project-one-description">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel iaculis mauris. Mauris euismod pretium eros, sit amet suscipit nisl accumsan a. Aliquam sed mauris dictum, egestas odio non, tincidunt velit. Praesent vel ipsum vel quam malesuada pretium. Aliquam tincidunt leo a magna tincidunt, in porta sem tincidunt. Ut non placerat metus. Curabitur id neque at neque sollicitudin varius. Curabitur blandit dolor quam, auctor volutpat urna iaculis eu. Sed faucibus, diam sed laoreet sollicitudin, ipsum turpis egestas metus, eget fringilla dui velit vel dui. Curabitur vel scelerisque ligula. Nulla sit amet semper felis, a pharetra orci. Duis at odio sed arcu volutpat porttitor. Donec porta suscipit purus, a tincidunt leo fringilla nec. Curabitur id ultricies ipsum, ac egestas mauris. Aliquam erat volutpat. Curabitur a ligula velit.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    
-                    <div class="project">
+                </div>
+            </section>
+            
+
+            <!-- Section 3 (Project 2)-->
+            <section id="project-2" class="project-2">
+                <div class="container">
+                    <div class="project-two">
                         <h3>FitCare</h3>
-                        <a href="#" class='btn-git'><i class="fab fa-github"></i>View</a>
-                        <div class="project-description">
-                        <img src="assets/images/project2.jpg" alt="Project 1">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel iaculis mauris. Mauris euismod pretium eros, sit amet suscipit nisl accumsan a. Aliquam sed mauris dictum, egestas odio non, tincidunt velit. Praesent vel ipsum vel quam malesuada pretium. Aliquam tincidunt leo a magna tincidunt, in porta sem tincidunt. Ut non placerat metus. Curabitur id neque at neque sollicitudin varius. Curabitur blandit dolor quam, auctor volutpat urna iaculis eu. Sed faucibus, diam sed laoreet sollicitudin, ipsum turpis egestas metus, eget fringilla dui velit vel dui. Curabitur vel scelerisque ligula. Nulla sit amet semper felis, a pharetra orci. Duis at odio sed arcu volutpat porttitor. Donec porta suscipit purus, a tincidunt leo fringilla nec. Curabitur id ultricies ipsum, ac egestas mauris. Aliquam erat volutpat. Curabitur a ligula velit.</p>
+                        <div class="project-details">
+                            <div class="project-buttons">
+                                <a href="#" class="btn-git"><i class="fab fa-github"></i>View</a>
+                            </div>
+                            <div class="project-description">
+                                <div class="project-image">
+                                    <img src="assets/images/project2.jpg" alt="Project 2">
+                                </div>
+                                <div class="project-info">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel iaculis mauris. Mauris euismod pretium eros, sit amet suscipit nisl accumsan a. Aliquam sed mauris dictum, egestas odio non, tincidunt velit. Praesent vel ipsum vel quam malesuada pretium. Aliquam tincidunt leo a magna tincidunt, in porta sem tincidunt. Ut non placerat metus. Curabitur id neque at neque sollicitudin varius. Curabitur blandit dolor quam, auctor volutpat urna iaculis eu. Sed faucibus, diam sed laoreet sollicitudin, ipsum turpis egestas metus, eget fringilla dui velit vel dui. Curabitur vel scelerisque ligula. Nulla sit amet semper felis, a pharetra orci. Duis at odio sed arcu volutpat porttitor. Donec porta suscipit purus, a tincidunt leo fringilla nec. Curabitur id ultricies ipsum, ac egestas mauris. Aliquam erat volutpat. Curabitur a ligula velit.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
