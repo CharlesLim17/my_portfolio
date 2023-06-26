@@ -145,7 +145,7 @@ body {
 }
 
 .project-1 {
-    background: radial-gradient(circle at center, rgba(23, 155, 158, 0.75), rgba(32, 32, 32, 0.5));
+    background: radial-gradient(circle at center, rgba(23, 155, 158, 1), rgba(84, 84, 84, 1));
     padding: 50px 0;
     min-height: 100vh;
     display: flex;
@@ -232,6 +232,85 @@ body {
 }
 
 .project-one-description p {
+	font-size: 18px;
+    line-height: 1.9;
+}
+
+.project-2 {
+    background: radial-gradient(circle at center, rgba(69, 159, 70, 1), rgba(84, 84, 84, 1));
+    padding: 50px 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.project-two-heading {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 20px;
+}
+
+.project-two-heading h3 {
+    margin-right: 12px;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.project-two-heading h5 {
+    font-size: 16px;
+    position: relative;
+    bottom: 0.4em;
+}
+
+.project-two-buttons {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.project-two-buttons a {
+    display: inline-block;
+    padding: 10px 0;
+    color: #fff;
+    background-color: #282828;
+    border-radius: 16px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.25s;
+    text-decoration: none;
+    margin-right: 6px;
+    width: 120px;
+    text-align: center;
+	font-weight: 500;
+}
+
+.project-two-buttons a.btn-git i {
+    color: #fff; 
+	margin-right: 2px;
+}
+
+.project-two-content {
+	display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.project-two-image {
+    flex: 0 0 50%;
+    text-align: start;
+}
+
+.project-two-image img {
+	max-width: 100%;
+	height: auto;
+}
+
+.project-two-description {
+    flex: 0 0 50%;
+    padding-left: 60px;
+}
+
+.project-two-description p {
 	font-size: 18px;
     line-height: 1.9;
 }
@@ -337,7 +416,7 @@ footer p {
 }
   
 
-@media (max-width: 1080px) {
+@media (max-width: 1220px) {
 	.hero h1 {
 		font-size: 44px;
 	}
@@ -367,14 +446,52 @@ footer p {
         max-width: 400px;
     }
 
-    .about-image img {
-        margin-bottom: 30px;
-    }
-
     .about-text {
         margin-top: 0;
         padding-left: 0;
     }
+}
+
+@media (max-width: 1080px) {
+	.project-one-content {
+		flex-direction: column;
+    	text-align: center;
+	}
+
+	.project-one-image, .project-one-description {
+		flex: 100%;
+	}
+	
+	.project-one-image img {
+		margin-bottom: 30px;
+        max-width: 600px;
+		margin-top: 20px;
+	}
+
+	.project-one-description {
+		margin-top: 0;
+        padding-left: 0;
+	}
+
+	.project-two-content {
+		flex-direction: column;
+    	text-align: center;
+	}
+
+	.project-two-image, .project-two-description {
+		flex: 100%;
+	}
+	
+	.project-two-image img {
+		margin-bottom: 30px;
+        max-width: 600px;
+		margin-top: 20px;
+	}
+
+	.project-two-description {
+		margin-top: 0;
+        padding-left: 0;
+	}
 }
 
 @keyframes slideFromLeft {
